@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var NewView: TestView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NewView.lblnavigationname.text = "Navigation Name"
+
     }
 
     override func didReceiveMemoryWarning() {
